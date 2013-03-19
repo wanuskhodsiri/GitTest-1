@@ -23,5 +23,5 @@ class Simple_drawing_window(QWidget):
             QPoint(50, 200), QPoint(150, 200), QPoint(100, 400),
         ])
 
-        p.drawImage(QRect(200, 100, 320, 320), self.rabbit)
+        p.drawImage(QRect(200, 100, 320, 120), self.rabbit)
         p.end()
