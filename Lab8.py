@@ -25,3 +25,4 @@ class Simple_drawing_window(QWidget):
 
         p.drawImage(QRect(200, 100, 320, 120), self.rabbit)
         p.end()
+gghhgh
