@@ -1,3 +1,7 @@
+import sys
+from PySide.QtCore import *
+from PySide.QtGui import *
+
 class Simple_drawing_window(QWidget):
     def __init__(self):
         QWidget.__init__(self, None)
@@ -23,5 +27,15 @@ class Simple_drawing_window(QWidget):
             QPoint(50, 200), QPoint(150, 200), QPoint(100, 400),
         ])
 
-        p.drawImage(QRect(200, 100, 320, 120), self.rabbit)
+        p.drawImage(QRect(200, 100, 320, 320), self.rabbit)
         p.end()
+        
+def main():
+    app = QApplication(sys.argv)
+    window = Simple_drawing_window()
+    window.show()
+    
+    return app.exec_()
+
+if __name__ == "__main__" :
+    sys.exit(main())
