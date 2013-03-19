@@ -77,8 +77,11 @@ def main():
     window = Simple_drawing_window()
     window.show()
     
-    window2 = Simple_drawing_window2()
+    window2 = Simple_drawing_window1()
     window2.show()
+    
+    window3 = Simple_drawing_window2()
+    window3.show()
     
     return app.exec_()
 
